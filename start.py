@@ -14,7 +14,7 @@ MotorD_pins = [22,27,17,4]
 Grabber_motor_pins = [22,27,17,4]
 
 #Calibration routine
-#run_motor(Grabber_motor_pins, 5)
+#run_motor.calibrate(Grabber_motor_pins, 5)
 #run_motor(MotorA_pins, 6)
 #run_motor(MotorB_pins, 7)
 #run_motor(MotorC_pins, 8)
