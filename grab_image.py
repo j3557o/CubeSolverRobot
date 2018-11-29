@@ -1,3 +1,5 @@
+#Grab image from PiCamera, returns an io_stream object
+
 import io
 from picamera import PiCamera
 #from PIL import Image

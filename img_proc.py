@@ -1,3 +1,5 @@
+#Return partial cube string for one side. Input is io stream with iamge data of one side of a cube. Cube should at least fill 90% of image
+
 from PIL import Image
 # Red = L(eft), Yellow = D(own), Green = B(ack), White = U(p), Pink = R(ight), Blue = F(ront)
 TARGET_COLORS = {"L": (169, 42, 16), "D": (204, 211, 71), "B": (85, 205, 41), "U": (244, 237, 225), "R": (251,79,108), "F": (36, 110, 174)}
