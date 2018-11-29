@@ -4,6 +4,7 @@ from time import sleep
 
 
 def grab_image():
+    io_stream = io.BytesIO()
     camera = PiCamera()
     camera.resolution = (3280,2464)
     camera.start_preview()
