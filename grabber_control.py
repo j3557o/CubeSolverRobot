@@ -1,0 +1,1 @@
+#Enable four states for the cube grabbers. All open, all closed, ac open and bd closed, ac closed nd bd open
