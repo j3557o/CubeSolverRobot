@@ -107,3 +107,4 @@ phase2_cornsliceprun
 phase2_edgemerge
 phase2_prun
 .vscode
+.vscode/settings.json
