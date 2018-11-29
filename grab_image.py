@@ -1,5 +1,6 @@
 import io
 from picamera import PiCamera
+from PIL import Image
 from time import sleep
 
 
