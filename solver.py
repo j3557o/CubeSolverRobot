@@ -218,11 +218,11 @@ def solve(cubestring, max_length=20, timeout=3):
     s_time = time.monotonic()
 
     # these mutable variables are modidified by all six threads
-    s_length = [999]
+    #s_length = [999]
     solutions = []
     terminated = thr.Event()
     terminated.clear()
-    syms = cc.symmetries();
+    syms = cc.symmetries()
     if len(list(set([16, 20, 24, 28]) & set(syms))) > 0:  # we have some rotational symmetry along a long diagonal
         tr = [0, 3]  # so we search only one direction and the inverse
     else:

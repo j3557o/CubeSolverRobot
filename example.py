@@ -56,7 +56,7 @@ quit()
 # 3. With this little graphical interface.
 # From within a Python script start the interface with
 
-import client_gui
+#import client_gui
 
 # From a terminal start the interface with
 # python client_gui.py
