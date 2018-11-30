@@ -12,5 +12,5 @@ def rotate_one_motor(motor, angle):
 def rotate_two_motors(motor1, motor2, angle):
     print("Rotate 2")
 
-def calibrate(motor, stop_pin):
-    print("Calibrate")
+def calibrate_motor(motor, stop_pin):
+    print("Calibrate " + str(motor))

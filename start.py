@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 #Start this script
 
+import threading
 import io
 import img_proc
 import grab_image
@@ -14,12 +15,23 @@ MotorD_pins = [22,27,17,4]
 Grabber_motor_pins = [22,27,17,4]
 
 #Calibration routine
-#run_motor.calibrate(Grabber_motor_pins, 5)
-#run_motor(MotorA_pins, 6)
-#run_motor(MotorB_pins, 7)
-#run_motor(MotorC_pins, 8)
-#run_motor(MotorD_pins, 9)
+t1 = threading.Thread(target=run_motor.calibrate_motor(Grabber_motor_pins, 5))
+t2 = threading.Thread(target=run_motor.calibrate_motor(MotorA_pins, 6))
+t3 = threading.Thread(target=run_motor.calibrate_motor(MotorB_pins, 7))
+t4 = threading.Thread(target=run_motor.calibrate_motor(MotorC_pins, 8))
+t5 = threading.Thread(target=run_motor.calibrate_motor(MotorD_pins, 9))
 
+t1.start()
+t2.start()
+t3.start()
+t4.start()
+t5.start()
+
+t1.join()
+t2.join()
+t3.join()
+t4.join()
+t5.join()
 
 #Open grabbers
 #Wait for input key
